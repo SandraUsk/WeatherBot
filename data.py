@@ -28,5 +28,3 @@ def get_suntime(city_id):
     sunset = str(((weather_dict['city']['sunset'] + weather_dict['city']['timezone']) % (24*60*60)) // 3600) + ":" + str((((weather_dict['city']['sunset'] + weather_dict['city']['timezone']) % (24*60*60)) // 60) % 60)
     s = "Восход солнца в " + str(sunrise) + ", заход - в " + str(sunset)
     return s
-
-
